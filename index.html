@@ -1,27 +1,104 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#211d18">
 
   <title>319 Cafe Pocket Ledger</title>
 
-<link rel="apple-touch-icon" sizes="180x180"
-      href="https://hey319cafe.github.io/319-cafe-pocket-ledger/apple-touch-icon.png.png">
-<link rel="icon" type="image/png" href="https://hey319cafe.github.io/319-cafe-pocket-ledger/apple-touch-icon.png.png">
+  <meta name="description" content="Three Hundred Nineteen Cafe - Pocket Ledger">
 
-  <meta name="apple-mobile-web-app-title" content="319 Cafe Ledger">
-  <meta name="theme-color" content="#111111">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      width: 100%;
+      height: 100%;
+      min-height: 100%;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background: #f5efe5;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      height: 100vh;
+      height: 100dvh;
+    }
+
+    .app-frame {
+      display: block;
+      width: 100%;
+      height: 100%;
+      height: 100dvh;
+      border: 0;
+      margin: 0;
+      padding: 0;
+      background: #f5efe5;
+    }
+
+    .fallback {
+      position: fixed;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      padding: 24px;
+      text-align: center;
+      color: #211d18;
+      background: #f5efe5;
+    }
+
+    .fallback h2 {
+      margin: 0;
+      font-size: 22px;
+    }
+
+    .fallback p {
+      margin: 0;
+      line-height: 1.6;
+      color: #665d50;
+    }
+
+    .fallback a {
+      display: inline-block;
+      padding: 13px 22px;
+      border-radius: 8px;
+      background: #211d18;
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+  </style>
 </head>
-<body style="font-family:Arial,sans-serif;text-align:center;padding:40px 20px;background:#111;color:#f5e8c8">
 
-  <h1>叄壹玖</h1>
-  <h2>319 Cafe Pocket Ledger</h2>
-  <p>Good Food · Good Day</p>
+<body>
 
-  <a href="https://script.google.com/macros/s/AKfycbycZGaJR0zlUhbJmqBQkv4RriVA-0Rol2o2LIqC_54VW4EsbT6g1zsP9RXqqiPmSWoVOg/exec"
-     style="display:inline-block;background:#d4af65;color:#111;padding:16px 24px;text-decoration:none;border-radius:8px;font-weight:bold">
-    OPEN MY LEDGER
-  </a>
+  <iframe
+    class="app-frame"
+    src="https://script.google.com/macros/s/AKfycbwbYj4d9MnNTlOgfwtAIh9v08BoOeGMPGRpaQ0XUfad0d3XV6vp9vkwCvzMu3MlCOIH/exec"
+    title="319 Cafe Pocket Ledger"
+    allow="clipboard-read; clipboard-write"
+    referrerpolicy="strict-origin-when-cross-origin">
+  </iframe>
+
+  <noscript>
+    <div class="fallback">
+      <h2>319 Cafe Pocket Ledger</h2>
+      <p>Please enable JavaScript to use the Pocket Ledger.</p>
+      <a href="https://script.google.com/macros/s/AKfycbwbYj4d9MnNTlOgfwtAIh9v08BoOeGMPGRpaQ0XUfad0d3XV6vp9vkwCvzMu3MlCOIH/exec">
+        Open Pocket Ledger
+      </a>
+    </div>
+  </noscript>
+
 </body>
 </html>
